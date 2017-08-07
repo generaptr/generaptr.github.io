@@ -1,0 +1,340 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>generaptr</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">generaptr</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> generaptr</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="-http-i-imgur-com-ycrauba-png-"><img src="http://i.imgur.com/yCRAubA.png" alt=""></h1>
+				<p><a href="http://badge.fury.io/js/generaptr"><img src="https://badge.fury.io/js/generaptr.svg" alt="npm"></a><a href="http://travis-ci.org/cupsadarius/generaptr"><img src="https://travis-ci.org/cupsadarius/generaptr.svg" alt="Build Status"></a> <a href="https://gitter.im/generaptr/proposals?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/generaptr/proposals.svg" alt="Join the chat at https://gitter.im/generaptr/proposals"></a> <a href="https://coveralls.io/github/cupsadarius/generaptr?branch=develop"><img src="https://coveralls.io/repos/github/cupsadarius/generaptr/badge.svg?branch=develop" alt="Coverage Status"></a><a href="https://david-dm.org/cupsadarius/generaptr"><img src="https://david-dm.org/cupsadarius/generaptr.svg?theme=shields.io" alt="dependencies"></a></p>
+				<p>Generaptr is a node cli package that helps when starting up a package by generating boilerplate code for Express api.</p>
+				<hr>
+				<h2 id="table-of-contents">Table of Contents</h2>
+				<ol>
+					<li><a href="#documentation">Documentation</a></li>
+					<li><a href="#minimum-requirements">Minimum Requirements</a></li>
+					<li><a href="#instalation">Installation</a></li>
+					<li><a href="#examples">Examples</a></li>
+					<li><a href="#support">Support</a></li>
+					<li><a href="#code-conduct">Code of Conduct</a></li>
+					<li><a href="#contributing">Contributing</a></li>
+					<li><a href="#license">License</a></li>
+					<li><a href="#references">References</a></li>
+				</ol>
+				<h2 id="goal-and-philosophy">Goal and Philosophy</h2>
+				<p><strong><code>Generaptr</code></strong> strives to be an easy and useful command line tool for generating boilerplate api for a given database structure.</p>
+				<p><strong><code>Generaptr</code></strong> should ease the process of:</p>
+				<ul>
+					<li>starting a new backend project</li>
+					<li>writing boilerplate crud operations</li>
+					<li>writing api specs</li>
+				</ul>
+				<h2 id="-documentation-documentation-"><a href="#documentation">Documentation</a></h2>
+				<p><a name="documentation"></a></p>
+				<h3 id="-minimum-requirements-minimum-requirements-"><a href="#minimum-requirements">Minimum Requirements</a></h3>
+				<p><a name="minimum-requirements"></a>
+				The package was developed under <code>node 7.5</code> so a minimum requirement would be:</p>
+				<ul>
+					<li><code>node &gt;= v7.5.0</code></li>
+					<li><code>npm &gt;= v3.10.10</code><h3 id="-installation-instalation-"><a href="#instalation">Installation</a></h3>
+					<a name="instalation"></a></li>
+				</ul>
+				<pre><code class="lang-shell">npm install generaptr
+</code></pre>
+				<h3 id="-examples-examples-"><a href="#examples">Examples</a></h3>
+				<p><a name="examples"></a></p>
+				<p>When starting generaptr the screen displayed below will appear.</p>
+				<p><img src="./assets/genraptr.png" alt=""></p>
+				<p>Here, the two possible actions are shown, actions which will decide on which flow will the execution continue:</p>
+				<ul>
+					<li><a href="#raml-flow">raml</a></li>
+					<li><a href="#api-flow">api</a><h4 id="-generate-raml-spec-flow-raml-flow-"><a href="#raml-flow">Generate Raml spec flow</a></h4>
+					<a name="raml-flow"></a></li>
+				</ul>
+				<p>Required information for generating the raml api spec is presented in the next screen.</p>
+				<p><img src="./assets/spec/raml-info.png" alt=""></p>
+				<p><img src="./assets/spec/raml-final.png" alt=""></p>
+				<p>In the screenShot we can see the logs from a successful api spec generation.</p>
+				<p><img src="./assets/spec/raml-folders.png" alt=""></p>
+				<p>Folder structure for a generated api spec.</p>
+				<h4 id="-generate-api-flow-api-flow-"><a href="#api-flow">Generate Api flow</a></h4>
+				<p><a name="api-flow"></a> </p>
+				<p>Required information for generating the api boilerplate is presented in the next screenShot.</p>
+				<p><img src="./assets/api/api-info.png" alt=""></p>
+				<h2 id="-support-support-"><a href="#support">Support</a></h2>
+				<p><a name="support"></a>
+					You should expect mostly good support for the CLI below. This does not mean we won&#39;t
+				look at issues found on other command line - feel free to report any!</p>
+				<ul>
+					<li><strong>Mac OS</strong>:<ul>
+							<li>Terminal.app</li>
+							<li>iTerm</li>
+						</ul>
+					</li>
+					<li><strong>Windows</strong>:<ul>
+							<li>cmd.exe</li>
+							<li>Powershell</li>
+							<li>Cygwin</li>
+						</ul>
+					</li>
+					<li><strong>Linux (Ubuntu, openSUSE, Arch Linux, etc)</strong>:<ul>
+							<li>gnome-terminal (Terminal GNOME)</li>
+							<li>konsole<h2 id="-code-of-conduct-code-conduct-"><a href="#code-conduct">Code of Conduct</a></h2>
+							<a name="code-conduct"></a></li>
+						</ul>
+					</li>
+				</ul>
+				<p>See <a href="./CODE_OF_CONDUCT.md">Code of Conduct</a> for more information.</p>
+				<h2 id="-contributing-contributing-"><a href="#contributing">Contributing</a></h2>
+				<p><a name="contributing"></a></p>
+				<p><strong>Unit test</strong></p>
+				<p>Unit test are written in <a href="https://mochajs.org/">Mocha</a> and <a href="https://nodejs.org/api/assert.html">Assert</a>. Please add a unit test for every new feature or bug fix. <code>npm test</code> to run the test suite.</p>
+				<p><strong>Documentation</strong></p>
+				<p>Add documentation for every API change. Feel free to send typo fixes and better docs!</p>
+				<h2 id="-license-license-"><a href="#license">License</a></h2>
+				<p><a name="license"></a></p>
+				<p>Copyright (c) 2017 Darius Cupsa (twitter: <a href="https://twitter.com/cupsadarius">@cupsadarius</a>)
+				Licensed under the MIT license.</p>
+				<h2 id="-references-references-"><a href="#references">References</a></h2>
+				<p><a name="references"></a></p>
+				<ul>
+					<li><a href="http://raml.org">RAML</a></li>
+					<li><a href="https://github.com/SBoudrias/Inquirer.js/">Inquirer.js</a></li>
+					<li><a href="https://expressjs.com">Express.js</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_constants_directorystructure_.html">"commons/constants/directory<wbr>Structure"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_constants_propertiesname_.html">"commons/constants/properties<wbr>Name"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_logger_.html">"commons/logger"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_types_.html">"commons/types"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_utils_cacheutil_.html">"commons/utils/cache<wbr>Util"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_utils_fileutil_.html">"commons/utils/file<wbr>Util"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_utils_ramlutil_.html">"commons/utils/raml<wbr>Util"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_utils_schemautil_.html">"commons/utils/schema<wbr>Util"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_utils_typeconverter_.html">"commons/utils/type<wbr>Converter"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_commons_utils_utils_.html">"commons/utils/utils"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_configs_config_.html">"configs/config"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_configs_logger_.html">"configs/logger"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_fileoperations_apifileoperations_.html">"file<wbr>Operations/<wbr>Api<wbr>File<wbr>Operations"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_fileoperations_ramlfileoperations_.html">"file<wbr>Operations/<wbr>Raml<wbr>File<wbr>Operations"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_generaptr_.html">"generaptr"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_generators_spec_examples_.html">"generators/spec/examples"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_generators_spec_spec_.html">"generators/spec/spec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_generators_spec_types_.html">"generators/spec/types"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_handlers_basehandler_.html">"handlers/<wbr>Base<wbr>Handler"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_handlers_mysqlhandler_.html">"handlers/<wbr>Mysql<wbr>Handler"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_handlers_ramlhandler_.html">"handlers/<wbr>Raml<wbr>Handler"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_preprocesors_mysqlschemapreprocessor_.html">"preprocesors/<wbr>Mysql<wbr>Schema<wbr>Preprocessor"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_preprocesors_ramlschemapreprocessor_.html">"preprocesors/<wbr>Raml<wbr>Schema<wbr>Preprocessor"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tracks_generaptr_.html">"tracks/generaptr"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tracks_inputs_database_databasetype_.html">"tracks/inputs/database/database<wbr>Type"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tracks_inputs_database_relational_mysql_.html">"tracks/inputs/database/relational/mysql"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tracks_inputs_database_relational_relational_.html">"tracks/inputs/database/relational/relational"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tracks_inputs_input_.html">"tracks/inputs/input"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tracks_inputs_raml_raml_.html">"tracks/inputs/raml/raml"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tracks_outputs_apioutput_.html">"tracks/outputs/api<wbr>Output"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_tracks_outputs_ramloutput_.html">"tracks/outputs/raml<wbr>Output"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
