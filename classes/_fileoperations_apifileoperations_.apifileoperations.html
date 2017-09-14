@@ -111,7 +111,17 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#createdirectorystructure" class="tsd-kind-icon">create<wbr>Directory<wbr>Structure</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#createpackagejson" class="tsd-kind-icon">create<wbr>Package<wbr>Json</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_fileoperations_apifileoperations_.apifileoperations.html#getdependenciesfordb" class="tsd-kind-icon">get<wbr>Dependencies<wbr>For<wbr>Db</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#getfilepath" class="tsd-kind-icon">get<wbr>File<wbr>Path</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#initializecommons" class="tsd-kind-icon">initialize<wbr>Commons</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#initializeconfig" class="tsd-kind-icon">initialize<wbr>Config</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#initializecontrollers" class="tsd-kind-icon">initialize<wbr>Controllers</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#initializemodels" class="tsd-kind-icon">initialize<wbr>Models</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#initializeorm" class="tsd-kind-icon">initializeORM</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#initializerepositories" class="tsd-kind-icon">initialize<wbr>Repositories</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#initializeservices" class="tsd-kind-icon">initialize<wbr>Services</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_fileoperations_apifileoperations_.apifileoperations.html#installdependencies" class="tsd-kind-icon">install<wbr>Dependencies</a></li>
 							</ul>
 						</section>
 					</div>
@@ -129,7 +139,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/fileOperations/ApiFileOperations.ts#L19">fileOperations/ApiFileOperations.ts:19</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L29">fileOperations/ApiFileOperations.ts:29</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -151,7 +161,7 @@
 					<div class="tsd-signature tsd-kind-icon">file<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/fileOperations/ApiFileOperations.ts#L19">fileOperations/ApiFileOperations.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L29">fileOperations/ApiFileOperations.ts:29</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -181,7 +191,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/fileOperations/ApiFileOperations.ts#L29">fileOperations/ApiFileOperations.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L39">fileOperations/ApiFileOperations.ts:39</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -195,6 +205,73 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="createpackagejson" class="tsd-anchor"></a>
+					<h3>create<wbr>Package<wbr>Json</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Package<wbr>Json<span class="tsd-signature-symbol">(</span>options<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#packagejsoninfo" class="tsd-signature-type">PackageJsonInfo</a>, dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L66">fileOperations/ApiFileOperations.ts:66</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates package json</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>options: <a href="../modules/_commons_types_.html#packagejsoninfo" class="tsd-signature-type">PackageJsonInfo</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>package json options</p>
+									</div>
+								</li>
+								<li>
+									<h5>dialect: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>database dialect</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>created package json</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getdependenciesfordb" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Dependencies<wbr>For<wbr>Db</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Dependencies<wbr>For<wbr>Db<span class="tsd-signature-symbol">(</span>dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L220">fileOperations/ApiFileOperations.ts:220</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get required dependencies based on database type</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dialect: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>required dependencies for the database type</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="getfilepath" class="tsd-anchor"></a>
 					<h3>get<wbr>File<wbr>Path</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -204,7 +281,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/fileOperations/ApiFileOperations.ts#L54">fileOperations/ApiFileOperations.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L236">fileOperations/ApiFileOperations.ts:236</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -214,6 +291,269 @@
 							</div>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 							<p>file path</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initializecommons" class="tsd-anchor"></a>
+					<h3>initialize<wbr>Commons</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Commons<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L147">fileOperations/ApiFileOperations.ts:147</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize commons</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initializeconfig" class="tsd-anchor"></a>
+					<h3>initialize<wbr>Config</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Config<span class="tsd-signature-symbol">(</span>connection<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#connectiondata" class="tsd-signature-type">ConnectionData</a>, schema<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L129">fileOperations/ApiFileOperations.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Generate config</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>memberof</dt>
+									<dd><p>ApiFileOperations</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>connection: <a href="../modules/_commons_types_.html#connectiondata" class="tsd-signature-type">ConnectionData</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>connection info</p>
+									</div>
+								</li>
+								<li>
+									<h5>schema: <a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>database schema tables</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<ul>
+								<li>true if generated config</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initializecontrollers" class="tsd-anchor"></a>
+					<h3>initialize<wbr>Controllers</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Controllers<span class="tsd-signature-symbol">(</span>schema<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L208">fileOperations/ApiFileOperations.ts:208</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize Controllers</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>schema: <a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initializemodels" class="tsd-anchor"></a>
+					<h3>initialize<wbr>Models</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Models<span class="tsd-signature-symbol">(</span>dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, schema<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L163">fileOperations/ApiFileOperations.ts:163</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize ODM</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dialect: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>database dialect</p>
+									</div>
+								</li>
+								<li>
+									<h5>schema: <a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>source schema for api generation</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>initialized odm</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initializeorm" class="tsd-anchor"></a>
+					<h3>initializeORM</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initializeORM<span class="tsd-signature-symbol">(</span>dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L112">fileOperations/ApiFileOperations.ts:112</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize ODM</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dialect: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>database dialect</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>initialized orm</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initializerepositories" class="tsd-anchor"></a>
+					<h3>initialize<wbr>Repositories</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Repositories<span class="tsd-signature-symbol">(</span>dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, schema<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L181">fileOperations/ApiFileOperations.ts:181</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize Repositories</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dialect: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>database dialect</p>
+									</div>
+								</li>
+								<li>
+									<h5>schema: <a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>source schema for api generation</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>initialized repositories</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="initializeservices" class="tsd-anchor"></a>
+					<h3>initialize<wbr>Services</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">initialize<wbr>Services<span class="tsd-signature-symbol">(</span>schema<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L197">fileOperations/ApiFileOperations.ts:197</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Initialize Services</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>schema: <a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="installdependencies" class="tsd-anchor"></a>
+					<h3>install<wbr>Dependencies</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">install<wbr>Dependencies<span class="tsd-signature-symbol">(</span>dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/fileOperations/ApiFileOperations.ts#L81">fileOperations/ApiFileOperations.ts:81</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Install dependencies for api stub</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>dialect: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>database type</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>installed dependencies</p>
 						</li>
 					</ul>
 				</section>
@@ -247,7 +587,37 @@
 								<a href="_fileoperations_apifileoperations_.apifileoperations.html#createdirectorystructure" class="tsd-kind-icon">create<wbr>Directory<wbr>Structure</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#createpackagejson" class="tsd-kind-icon">create<wbr>Package<wbr>Json</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#getdependenciesfordb" class="tsd-kind-icon">get<wbr>Dependencies<wbr>For<wbr>Db</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_fileoperations_apifileoperations_.apifileoperations.html#getfilepath" class="tsd-kind-icon">get<wbr>File<wbr>Path</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#initializecommons" class="tsd-kind-icon">initialize<wbr>Commons</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#initializeconfig" class="tsd-kind-icon">initialize<wbr>Config</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#initializecontrollers" class="tsd-kind-icon">initialize<wbr>Controllers</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#initializemodels" class="tsd-kind-icon">initialize<wbr>Models</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#initializeorm" class="tsd-kind-icon">initializeORM</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#initializerepositories" class="tsd-kind-icon">initialize<wbr>Repositories</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#initializeservices" class="tsd-kind-icon">initialize<wbr>Services</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_fileoperations_apifileoperations_.apifileoperations.html#installdependencies" class="tsd-kind-icon">install<wbr>Dependencies</a>
 							</li>
 						</ul>
 					</li>

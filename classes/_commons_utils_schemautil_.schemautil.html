@@ -98,8 +98,12 @@
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_schemautil_.schemautil.html#circularrelationisarray" class="tsd-kind-icon">circular<wbr>Relation<wbr>IsArray</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_schemautil_.schemautil.html#circularrelationisrequired" class="tsd-kind-icon">circular<wbr>Relation<wbr>IsRequired</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_schemautil_.schemautil.html#convertvalues" class="tsd-kind-icon">convert<wbr>Values</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_schemautil_.schemautil.html#getnormalizedtablebytype" class="tsd-kind-icon">get<wbr>Normalized<wbr>Table<wbr>ByType</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_schemautil_.schemautil.html#getrelatedtablesfortable" class="tsd-kind-icon">get<wbr>Related<wbr>Tables<wbr>For<wbr>Table</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_schemautil_.schemautil.html#iscircularrelation" class="tsd-kind-icon">is<wbr>Circular<wbr>Relation</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_schemautil_.schemautil.html#valuestoramldatatype" class="tsd-kind-icon">values<wbr>ToRaml<wbr>Data<wbr>Type</a></li>
 							</ul>
 						</section>
@@ -108,6 +112,94 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="circularrelationisarray" class="tsd-anchor"></a>
+					<h3>circular<wbr>Relation<wbr>IsArray</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">circular<wbr>Relation<wbr>IsArray<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#table" class="tsd-signature-type">Table</a>, column<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#column" class="tsd-signature-type">Column</a>, schema<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/schemaUtil.ts#L100">commons/utils/schemaUtil.ts:100</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a circular reference is array.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="../modules/_commons_types_.html#table" class="tsd-signature-type">Table</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>source table</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <a href="../modules/_commons_types_.html#column" class="tsd-signature-type">Column</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>column which references another table</p>
+									</div>
+								</li>
+								<li>
+									<h5>schema: <a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>whole schema</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if a circular reference is array</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="circularrelationisrequired" class="tsd-anchor"></a>
+					<h3>circular<wbr>Relation<wbr>IsRequired</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">circular<wbr>Relation<wbr>IsRequired<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#table" class="tsd-signature-type">Table</a>, column<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#column" class="tsd-signature-type">Column</a>, schema<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/schemaUtil.ts#L83">commons/utils/schemaUtil.ts:83</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a circular reference is required.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="../modules/_commons_types_.html#table" class="tsd-signature-type">Table</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>source table</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <a href="../modules/_commons_types_.html#column" class="tsd-signature-type">Column</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>column which references another table</p>
+									</div>
+								</li>
+								<li>
+									<h5>schema: <a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>whole schema</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if a circular reference is required</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="convertvalues" class="tsd-anchor"></a>
 					<h3>convert<wbr>Values</h3>
@@ -118,7 +210,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/utils/schemaUtil.ts#L34">commons/utils/schemaUtil.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/schemaUtil.ts#L34">commons/utils/schemaUtil.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -150,7 +242,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/utils/schemaUtil.ts#L18">commons/utils/schemaUtil.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/schemaUtil.ts#L18">commons/utils/schemaUtil.ts:18</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -182,6 +274,84 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getrelatedtablesfortable" class="tsd-anchor"></a>
+					<h3>get<wbr>Related<wbr>Tables<wbr>For<wbr>Table</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Related<wbr>Tables<wbr>For<wbr>Table<span class="tsd-signature-symbol">(</span>table<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#table" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/schemaUtil.ts#L115">commons/utils/schemaUtil.ts:115</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Get related table names for a given table.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>table: <a href="../modules/_commons_types_.html#table" class="tsd-signature-type">Table</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>given table</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+							<ul>
+								<li>related tables</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="iscircularrelation" class="tsd-anchor"></a>
+					<h3>is<wbr>Circular<wbr>Relation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Circular<wbr>Relation<span class="tsd-signature-symbol">(</span>source<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#table" class="tsd-signature-type">Table</a>, column<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#column" class="tsd-signature-type">Column</a>, schema<span class="tsd-signature-symbol">: </span><a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/schemaUtil.ts#L66">commons/utils/schemaUtil.ts:66</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if a circular reference exists between the source and target table.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>source: <a href="../modules/_commons_types_.html#table" class="tsd-signature-type">Table</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>source table</p>
+									</div>
+								</li>
+								<li>
+									<h5>column: <a href="../modules/_commons_types_.html#column" class="tsd-signature-type">Column</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>column which references another table</p>
+									</div>
+								</li>
+								<li>
+									<h5>schema: <a href="../modules/_commons_types_.html#schema" class="tsd-signature-type">Schema</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>whole schema</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+							<p>true if a circular reference exists in the target table</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="valuestoramldatatype" class="tsd-anchor"></a>
 					<h3>values<wbr>ToRaml<wbr>Data<wbr>Type</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -191,7 +361,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/utils/schemaUtil.ts#L54">commons/utils/schemaUtil.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/schemaUtil.ts#L54">commons/utils/schemaUtil.ts:54</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -236,10 +406,22 @@
 						<a href="_commons_utils_schemautil_.schemautil.html" class="tsd-kind-icon">Schema<wbr>Util</a>
 						<ul>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_commons_utils_schemautil_.schemautil.html#circularrelationisarray" class="tsd-kind-icon">circular<wbr>Relation<wbr>IsArray</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_commons_utils_schemautil_.schemautil.html#circularrelationisrequired" class="tsd-kind-icon">circular<wbr>Relation<wbr>IsRequired</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commons_utils_schemautil_.schemautil.html#convertvalues" class="tsd-kind-icon">convert<wbr>Values</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commons_utils_schemautil_.schemautil.html#getnormalizedtablebytype" class="tsd-kind-icon">get<wbr>Normalized<wbr>Table<wbr>ByType</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_commons_utils_schemautil_.schemautil.html#getrelatedtablesfortable" class="tsd-kind-icon">get<wbr>Related<wbr>Tables<wbr>For<wbr>Table</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_commons_utils_schemautil_.schemautil.html#iscircularrelation" class="tsd-kind-icon">is<wbr>Circular<wbr>Relation</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commons_utils_schemautil_.schemautil.html#valuestoramldatatype" class="tsd-kind-icon">values<wbr>ToRaml<wbr>Data<wbr>Type</a>

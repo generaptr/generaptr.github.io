@@ -75,15 +75,20 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#cache" class="tsd-kind-icon">Cache</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#column" class="tsd-kind-icon">Column</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#connectiondata" class="tsd-kind-icon">Connection<wbr>Data</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#datatype-1" class="tsd-kind-icon">Data<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#everything" class="tsd-kind-icon">Everything</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#example" class="tsd-kind-icon">Example</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#mapofstrings" class="tsd-kind-icon">Map<wbr>OfStrings</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#mysqlcolumnschema" class="tsd-kind-icon">My<wbr>Sql<wbr>Column<wbr>Schema</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#packagejson" class="tsd-kind-icon">Package<wbr>Json</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#packagejsoninfo" class="tsd-kind-icon">Package<wbr>Json<wbr>Info</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#ramlapplicationinfo" class="tsd-kind-icon">RAMLApplication<wbr>Info</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#ramlcolumnschema" class="tsd-kind-icon">Raml<wbr>Column<wbr>Schema</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#ramltype" class="tsd-kind-icon">Raml<wbr>Type</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#rawtablereference" class="tsd-kind-icon">Raw<wbr>Table<wbr>Reference</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#schema" class="tsd-kind-icon">Schema</a></li>
+								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#sequleizeconfig" class="tsd-kind-icon">Sequleize<wbr>Config</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#stringmapofstrings" class="tsd-kind-icon">String<wbr>Map<wbr>OfStrings</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#table" class="tsd-kind-icon">Table</a></li>
 								<li class="tsd-kind-type-alias tsd-parent-kind-external-module"><a href="_commons_types_.html#tablereference" class="tsd-kind-icon">Table<wbr>Reference</a></li>
@@ -100,7 +105,7 @@
 					<div class="tsd-signature tsd-kind-icon">Cache<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L70">commons/types.ts:70</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L73">commons/types.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -123,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">Column<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L50">commons/types.ts:50</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L53">commons/types.ts:53</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -151,12 +156,45 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="connectiondata" class="tsd-anchor"></a>
+					<h3>Connection<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">Connection<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L93">commons/types.ts:93</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>database<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>user<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="datatype-1" class="tsd-anchor"></a>
 					<h3>Data<wbr>Type</h3>
 					<div class="tsd-signature tsd-kind-icon">Data<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L41">commons/types.ts:41</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L42">commons/types.ts:42</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -166,10 +204,16 @@
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Array<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h5>
 							</li>
 							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Relation<wbr>Holder<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span></h5>
+							</li>
+							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> raw<wbr>Values<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> references<span class="tsd-signature-symbol">?: </span><a href="_commons_types_.html#tablereference" class="tsd-signature-type">TableReference</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> relation<wbr>Type<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">"1-1"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"1-n"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"n-n"</span></h5>
 							</li>
 							<li class="tsd-parameter">
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> size<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
@@ -189,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">Everything<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Object</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">__type</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L68">commons/types.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L71">commons/types.ts:71</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -199,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">Example<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L76">commons/types.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L79">commons/types.ts:79</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -220,12 +264,30 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="mapofstrings" class="tsd-anchor"></a>
+					<h3>Map<wbr>OfStrings</h3>
+					<div class="tsd-signature tsd-kind-icon">Map<wbr>OfStrings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L1">commons/types.ts:1</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter-index-signature">
+								<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="mysqlcolumnschema" class="tsd-anchor"></a>
 					<h3>My<wbr>Sql<wbr>Column<wbr>Schema</h3>
 					<div class="tsd-signature tsd-kind-icon">My<wbr>Sql<wbr>Column<wbr>Schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L20">commons/types.ts:20</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L21">commons/types.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -253,12 +315,89 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="packagejson" class="tsd-anchor"></a>
+					<h3>Package<wbr>Json</h3>
+					<div class="tsd-signature tsd-kind-icon">Package<wbr>Json<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L123">commons/types.ts:123</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>author<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>dependencies<span class="tsd-signature-symbol">: </span><a href="_commons_types_.html#mapofstrings" class="tsd-signature-type">MapOfStrings</a></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>license<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>main<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>scripts<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-index-signature">
+										<h5><span class="tsd-signature-symbol">[</span>key: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="packagejsoninfo" class="tsd-anchor"></a>
+					<h3>Package<wbr>Json<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">Package<wbr>Json<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L134">commons/types.ts:134</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>author<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>description<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>license<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>output<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>version<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="ramlapplicationinfo" class="tsd-anchor"></a>
 					<h3>RAMLApplication<wbr>Info</h3>
 					<div class="tsd-signature tsd-kind-icon">RAMLApplication<wbr>Info<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L83">commons/types.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L86">commons/types.ts:86</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -285,7 +424,7 @@
 					<div class="tsd-signature tsd-kind-icon">Raml<wbr>Column<wbr>Schema<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L2">commons/types.ts:2</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L3">commons/types.ts:3</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -318,7 +457,7 @@
 					<div class="tsd-signature tsd-kind-icon">Raml<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L11">commons/types.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L12">commons/types.ts:12</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -333,7 +472,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L12">commons/types.ts:12</a></li>
+												<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L13">commons/types.ts:13</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -348,7 +487,7 @@
 									<li class="tsd-description">
 										<aside class="tsd-sources">
 											<ul>
-												<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L13">commons/types.ts:13</a></li>
+												<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L14">commons/types.ts:14</a></li>
 											</ul>
 										</aside>
 										<h4 class="tsd-parameters-title">Parameters</h4>
@@ -379,7 +518,7 @@
 					<div class="tsd-signature tsd-kind-icon">Raw<wbr>Table<wbr>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L29">commons/types.ts:29</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L30">commons/types.ts:30</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -403,9 +542,76 @@
 					<div class="tsd-signature tsd-kind-icon">Schema<span class="tsd-signature-symbol">:</span> <a href="_commons_types_.html#table" class="tsd-signature-type">Table</a><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L64">commons/types.ts:64</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L67">commons/types.ts:67</a></li>
 						</ul>
 					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
+					<a name="sequleizeconfig" class="tsd-anchor"></a>
+					<h3>Sequleize<wbr>Config</h3>
+					<div class="tsd-signature tsd-kind-icon">Sequleize<wbr>Config<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L102">commons/types.ts:102</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>development<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>database<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>production<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter">
+										<h5>database<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>dialect<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>host<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>password<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-external-module">
 					<a name="stringmapofstrings" class="tsd-anchor"></a>
@@ -413,7 +619,7 @@
 					<div class="tsd-signature tsd-kind-icon">String<wbr>Map<wbr>OfStrings<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L66">commons/types.ts:66</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L69">commons/types.ts:69</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -431,7 +637,7 @@
 					<div class="tsd-signature tsd-kind-icon">Table<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L59">commons/types.ts:59</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L62">commons/types.ts:62</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -452,7 +658,7 @@
 					<div class="tsd-signature tsd-kind-icon">Table<wbr>Reference<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/cupsadarius/generaptr/blob/f2c7d44/src/commons/types.ts#L35">commons/types.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/types.ts#L36">commons/types.ts:36</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-type-declaration">
@@ -492,6 +698,9 @@
 						<a href="_commons_types_.html#column" class="tsd-kind-icon">Column</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_commons_types_.html#connectiondata" class="tsd-kind-icon">Connection<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_commons_types_.html#datatype-1" class="tsd-kind-icon">Data<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
@@ -501,7 +710,16 @@
 						<a href="_commons_types_.html#example" class="tsd-kind-icon">Example</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_commons_types_.html#mapofstrings" class="tsd-kind-icon">Map<wbr>OfStrings</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_commons_types_.html#mysqlcolumnschema" class="tsd-kind-icon">My<wbr>Sql<wbr>Column<wbr>Schema</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_commons_types_.html#packagejson" class="tsd-kind-icon">Package<wbr>Json</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_commons_types_.html#packagejsoninfo" class="tsd-kind-icon">Package<wbr>Json<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_commons_types_.html#ramlapplicationinfo" class="tsd-kind-icon">RAMLApplication<wbr>Info</a>
@@ -517,6 +735,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_commons_types_.html#schema" class="tsd-kind-icon">Schema</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
+						<a href="_commons_types_.html#sequleizeconfig" class="tsd-kind-icon">Sequleize<wbr>Config</a>
 					</li>
 					<li class=" tsd-kind-type-alias tsd-parent-kind-external-module">
 						<a href="_commons_types_.html#stringmapofstrings" class="tsd-kind-icon">String<wbr>Map<wbr>OfStrings</a>
