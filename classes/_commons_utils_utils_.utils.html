@@ -99,12 +99,15 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#converttojson" class="tsd-kind-icon">convert<wbr>ToJSON</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="_commons_utils_utils_.utils.html#editdistance" class="tsd-kind-icon">edit<wbr>Distance</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#fillarray" class="tsd-kind-icon">fill<wbr>Array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#formatline" class="tsd-kind-icon">format<wbr>Line</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#indexofignorecase" class="tsd-kind-icon">index<wbr>OfIgnore<wbr>Case</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#pluralisewordarray" class="tsd-kind-icon">pluralise<wbr>Word<wbr>Array</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#pluralize" class="tsd-kind-icon">pluralize</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#similarity" class="tsd-kind-icon">similarity</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#singular" class="tsd-kind-icon">singular</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#tocolumnname" class="tsd-kind-icon">to<wbr>Column<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#totablename" class="tsd-kind-icon">to<wbr>Table<wbr>Name</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_commons_utils_utils_.utils.html#totitlecase" class="tsd-kind-icon">to<wbr>Title<wbr>Case</a></li>
 							</ul>
@@ -124,7 +127,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L66">commons/utils/utils.ts:66</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L76">commons/utils/utils.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -146,6 +149,44 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="editdistance" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> edit<wbr>Distance</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">edit<wbr>Distance<span class="tsd-signature-symbol">(</span>needle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, haystack<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L127">commons/utils/utils.ts:127</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find the common edit distance between two strings.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>needle: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>string which will be matched</p>
+									</div>
+								</li>
+								<li>
+									<h5>haystack: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>string to be matched against</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>common edit distance between strings</p>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="fillarray" class="tsd-anchor"></a>
 					<h3>fill<wbr>Array</h3>
@@ -156,7 +197,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L86">commons/utils/utils.ts:86</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L96">commons/utils/utils.ts:96</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +237,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L100">commons/utils/utils.ts:100</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L110">commons/utils/utils.ts:110</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -242,7 +283,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L76">commons/utils/utils.ts:76</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L86">commons/utils/utils.ts:86</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -280,7 +321,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L55">commons/utils/utils.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L65">commons/utils/utils.ts:65</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -314,7 +355,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L37">commons/utils/utils.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L47">commons/utils/utils.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -337,6 +378,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="similarity" class="tsd-anchor"></a>
+					<h3>similarity</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">similarity<span class="tsd-signature-symbol">(</span>needle<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, haystack<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L163">commons/utils/utils.ts:163</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds the similarity between two strings</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>needle: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>haystack: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<p>percentage of similarity as float</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="singular" class="tsd-anchor"></a>
 					<h3>singular</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -346,7 +419,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L46">commons/utils/utils.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L56">commons/utils/utils.ts:56</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -371,6 +444,35 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tocolumnname" class="tsd-anchor"></a>
+					<h3>to<wbr>Column<wbr>Name</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>Column<wbr>Name<span class="tsd-signature-symbol">(</span>word<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L39">commons/utils/utils.ts:39</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Convert word to comply with the column name schema.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>word: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+							<p>eg: user_id</p>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
 					<a name="totablename" class="tsd-anchor"></a>
 					<h3>to<wbr>Table<wbr>Name</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
@@ -380,7 +482,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L29">commons/utils/utils.ts:29</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L29">commons/utils/utils.ts:29</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -412,7 +514,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/adf1881/src/commons/utils/utils.ts#L17">commons/utils/utils.ts:17</a></li>
+									<li>Defined in <a href="https://github.com/generaptr/generaptr/blob/7a05d40/src/commons/utils/utils.ts#L17">commons/utils/utils.ts:17</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -457,6 +559,9 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commons_utils_utils_.utils.html#converttojson" class="tsd-kind-icon">convert<wbr>ToJSON</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="_commons_utils_utils_.utils.html#editdistance" class="tsd-kind-icon">edit<wbr>Distance</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commons_utils_utils_.utils.html#fillarray" class="tsd-kind-icon">fill<wbr>Array</a>
 							</li>
@@ -473,7 +578,13 @@
 								<a href="_commons_utils_utils_.utils.html#pluralize" class="tsd-kind-icon">pluralize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_commons_utils_utils_.utils.html#similarity" class="tsd-kind-icon">similarity</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commons_utils_utils_.utils.html#singular" class="tsd-kind-icon">singular</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="_commons_utils_utils_.utils.html#tocolumnname" class="tsd-kind-icon">to<wbr>Column<wbr>Name</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
 								<a href="_commons_utils_utils_.utils.html#totablename" class="tsd-kind-icon">to<wbr>Table<wbr>Name</a>
